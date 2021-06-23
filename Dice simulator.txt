@@ -1,0 +1,23 @@
+import time
+import random
+print("***********Dice Simulator**********")
+min=1
+max=6
+choice="Y"
+while(choice=="Y" or choice=="y"):
+    time.sleep(1)
+    print("Rolling the Dice!!!")
+    rand = random.randint(min, max)
+    rand1 = random.randint(min,max)
+    time.sleep(1)
+    print("You got : ")
+    time.sleep(0.5)
+    print(rand)
+    time.sleep(0.5)
+    print(rand1)
+    print("Do you want to roll the dice again?? Press \"Y\" for yes and Any other key for No : ")
+    choice=input()
+
+if choice!="Y" or choice!="y":
+    time.sleep(0.5)
+    print("Have a good day , Will meet you next time!!")
